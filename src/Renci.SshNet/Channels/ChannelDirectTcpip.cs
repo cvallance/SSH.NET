@@ -139,7 +139,7 @@ namespace Renci.SshNet.Channels
                 catch (SocketException ex)
                 {
                     // TODO: log as warning
-                    DiagnosticAbstraction.Log("Failure shutting down socket: " + ex);
+                    Console.WriteLine("Failure shutting down socket: " + ex);
                 }
             }
         }

@@ -245,7 +245,7 @@ namespace Renci.SshNet
         /// <exception cref="ObjectDisposedException">The method was called after the client was disposed.</exception>
         public void Disconnect()
         {
-            DiagnosticAbstraction.Log("Disconnecting client.");
+            Console.WriteLine("Disconnecting client.");
 
             CheckDisposed();
 
@@ -336,7 +336,7 @@ namespace Renci.SshNet
         /// </summary>
         public void Dispose()
         {
-            DiagnosticAbstraction.Log("Disposing client.");
+            Console.WriteLine("Disposing client.");
 
             Dispose(true);
             GC.SuppressFinalize(this);

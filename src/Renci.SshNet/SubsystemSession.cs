@@ -180,7 +180,7 @@ namespace Renci.SshNet
         {
             _exception = error;
 
-            DiagnosticAbstraction.Log("Raised exception: " + error);
+            Console.WriteLine("Raised exception: " + error);
 
             var errorOccuredWaitHandle = _errorOccuredWaitHandle;
             if (errorOccuredWaitHandle != null)

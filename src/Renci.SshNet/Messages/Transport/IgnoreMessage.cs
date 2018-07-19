@@ -68,7 +68,7 @@ namespace Renci.SshNet.Messages.Transport
 
             if (dataLength > (DataStream.Length - DataStream.Position))
             {
-                DiagnosticAbstraction.Log("SSH_MSG_IGNORE: Length exceeds data bytes, data ignored.");
+                Console.WriteLine("SSH_MSG_IGNORE: Length exceeds data bytes, data ignored.");
                 Data = Array<byte>.Empty;
             }
             else
